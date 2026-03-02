@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le gîte | Terrasses des Boutisses</title>
+    <title>Accueil | Terrasses des Boutisses</title>
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Amarante&family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=New+Rocker&family=Rye&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/> <!-- Pour les icônes des réseaux et la map google -->
@@ -15,6 +15,12 @@
             <div class="logo">
                 <h2>Gîte Les Terrasses des Boutisses</h2>
             </div>
+
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div> <!-- pour le menu mobile -->
 
             <nav class="navbar">
                 <ul>
@@ -190,13 +196,13 @@
     })
 
 
-//     const toggle = document.querySelector('.menu-toggle');
-//     const sidebar = document.querySelector('.main-nav > ul');
+     const toggle = document.querySelector('.menu-toggle');
+     const sidebar = document.querySelector('.navbar > ul');
 
-//     toggle.addEventListener('click', () => {      
-//         sidebar.classList.toggle('open');
-//         toggle.classList.toggle('open');
-//     })
+     toggle.addEventListener('click', () => {      
+         sidebar.classList.toggle('open');
+         toggle.classList.toggle('open');
+    })
 
     </script>
 

@@ -27,6 +27,7 @@ html {
 .logo h2 {
     font-family: "Dancing Script", cursive;
     font-size: 2.5rem;
+    text-align: center;
 }
 
 .navbar ul {
@@ -83,6 +84,12 @@ html {
   padding-bottom: 10px;
 }
 
+/* Menu hamburger caché par défaut */
+.menu-toggle {
+  display: none; /* caché par défaut */
+}
+
+
 /* ---- MAIN ----- */
 /* ----- 1ère section ----- */
 .bienvenue{
@@ -94,7 +101,7 @@ html {
 .bienvenue img{
     width: 100%;
     height: 45rem;
-    /* max-width: 100%; */
+    max-width: 100%;
 }
 .bienvenue-text{
     position: absolute;
@@ -105,7 +112,6 @@ html {
     place-self: center;
     text-align: center;
     color: #ffffff;
-    font-weight: 600;
     font-size: 2.5rem;
     display: flex; 
     flex-direction: column;
@@ -230,3 +236,259 @@ footer a {
     font-size: 2rem;
 }
 
+/* ------ RESPONSIVE ----- */
+@media (max-width : 1100px) {
+    .section {
+    margin: 5rem 2rem 0 2rem;
+    }
+    .navbar ul {
+        gap: 2rem;
+    }
+    .logo {
+        width: 40%;
+    }
+    .bienvenue1 img {
+        height: 20rem;
+    }
+    .legite img {
+        height: 15rem;
+    }
+   .lelieu img {
+        height: 18rem;
+    }
+    .bienvenue11, .legite1 , .lelieu1, .accueil1, .accueil2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bienvenue11 h2, .legite1 h2, .lelieu1 h2, .accueil h2 {
+        padding: 0 2rem;
+        font-size: 1.4rem;
+    }
+    .bienvenue11 p, .legite1 p, .lelieu1 p, .accueil1 p, .lelieu2 p {
+        line-height: 1.2rem;
+        padding: 0 2rem;
+        font-size: 1rem;
+    }
+    .accueil2 p {
+        font-size: 0.8rem;
+    }
+    .video h2 {
+        font-size: 2rem;
+    }
+    .reseaux {
+        padding: 1rem 0;
+    }
+}
+
+@media (max-width : 870px) {
+    .logo h2 {
+        font-size: 2rem;
+    }
+    .bienvenue-text h1 {
+        font-size: 4rem;
+        color: black;
+    }
+    .bienvenue-text h4 {
+        color: black;
+    }
+
+    .menu-toggle {
+        position: relative;
+        display: flex;
+        left: 22%;
+        align-items: center;
+        height: 40px;
+        width: 40px;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+    .menu-toggle span {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 7px;
+        background: rgb(125, 67, 31);
+        border-radius: 10px;
+        pointer-events: none;
+        transition: 1s ease-in-out;
+    }
+    .menu-toggle span:nth-child(1) {
+        transform: translateY(17px);
+    }
+    .menu-toggle span:nth-child(3) {
+        transform: translateY(-17px);
+    }
+
+    .menu-toggle.open span:nth-child(1) {
+        transform: rotate(135deg);
+    }
+    .menu-toggle.open span:nth-child(3) {
+        transform: rotate(-135deg);
+    }
+    .menu-toggle.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle span:nth-child(1),
+    .menu-toggle span:nth-child(3) {
+        transition: transform 0.5s ease-in-out;
+    }
+
+
+    .navbar > ul {
+        flex-direction: column;  
+        position: absolute;
+        top: 100%;
+        gap: 0.5rem;
+        align-items: center;
+        background: #e2e4efc0;
+        border-left: inset 1px;
+        height: 100vh;
+        padding: 1rem;
+        transform: translate(90px);
+        transition: 1s ease-in-out;
+    }
+    .navbar > ul.open {
+        transform: translate(-30%);
+    }
+    .navbar li a {
+        font-size: 1.3rem;
+    }
+
+    video {
+        width: 70%;
+        height: auto;
+    }
+
+    .adress, .reseaux {
+        padding: 2rem;
+    }
+    .adress h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .adress p {
+        font-size: 1rem;
+        text-align: center;
+    }
+    .reseaux h3 {
+        font-size: 1.2rem;
+    }
+    .socials {
+        font-size: 1rem;
+    }
+    #copyright {
+        font-size: 1.2rem;
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width : 720px) {
+    .navbar > ul.open {
+        transform: translate(-50%);
+    }
+
+    .bienvenue-text h1 {
+        font-size: 4rem;
+    }
+    .bienvenue1 img {
+        height: 18rem;
+    }
+    .legite img {
+        height: 12rem;
+    }
+   .lelieu img {
+        height: 15rem;
+    }
+    .bienvenue11 h2, .legite1 h2, .lelieu1 h2, .accueil h2 {
+        padding: 0 2rem;
+        font-size: 1.4rem;
+    }
+    .bienvenue11 p, .legite1 p, .lelieu1 p, .accueil1 p, .lelieu2 p {
+        line-height: 1.1rem;
+        font-size: 0.8rem;
+    }
+    .accueil img {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .adress, .reseaux {
+        padding: 0.5rem;
+    }
+    .adress h1 {
+        font-size: 1.2rem;
+    }
+    .adress p {
+        font-size: 1rem;
+    }
+    .reseaux h3 {
+        font-size: 1rem;
+    }
+    .socials {
+        font-size: 0.8rem;
+    }
+    #copyright {
+        font-size: 0.6rem;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width : 600px) {
+    .navbar > ul.open {
+        transform: translate(-70%);
+    }
+    .menu-toggle {
+        left: 18%;
+    }
+
+    .logo h2 {
+        font-size: 1.4rem;
+    }
+    .bienvenue-text h1 {
+        font-size: 3rem;
+    }
+    .bienvenue-text h4 {
+        font-size: 2rem;
+    }
+    .bienvenue1, .accueil, .legite, .lelieu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    .bienvenue1 img, .legite img, .accueil1 img, .lelieu img {
+        height: 12rem;
+    }
+    .lelieu2 {
+        padding: 0.5rem;
+    }
+    .video h2 {
+        font-size: 1.5rem;
+    }
+
+    .adress, .reseaux {
+        padding: 0.5rem;
+    }
+    .adress h1 {
+        font-size: 1rem;
+    }
+    .adress p {
+        font-size: 0.8rem;
+    }
+    .reseaux h3 {
+        font-size: 0.8rem;
+    }
+    .socials span{
+        font-size: 1rem;
+        padding-left: 0.5rem;
+    }
+    #copyright p {
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+    }
+}
