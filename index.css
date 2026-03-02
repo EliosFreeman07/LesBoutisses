@@ -288,10 +288,10 @@ footer a {
     }
     .bienvenue-text h1 {
         font-size: 4rem;
-        color: black;
+        /* color: black; */
     }
     .bienvenue-text h4 {
-        color: black;
+        /* color: black; */
     }
 
     .menu-toggle {
