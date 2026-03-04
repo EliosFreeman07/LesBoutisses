@@ -456,6 +456,7 @@ footer a {
     .menu-toggle {
         width: 30px;
         height: 30px;
+        left: 20%;
     }
     .menu-toggle span {
         height: 5px;
@@ -463,14 +464,13 @@ footer a {
     .navbar li a {
         font-size: 1rem;
     }
+    .navbar > ul.open {
+        transform: translate(-60%);
+    }
 
     .logo h2 {
         font-size: 1.4rem;
     }
-
-    /* .nous-trouver iframe {
-        width: 80vw;
-    } */
 
     .adress, .reseaux {
         padding: 0.5rem;

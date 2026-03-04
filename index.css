@@ -473,12 +473,16 @@ footer a {
     .menu-toggle {
         width: 30px;
         height: 30px;
+        left: 20%;
     }
     .menu-toggle span {
         height: 5px;
     }
     .navbar li a {
         font-size: 1rem;
+    }
+    .navbar > ul.open {
+        transform: translate(-60%);
     }
 
     .logo h2 {
