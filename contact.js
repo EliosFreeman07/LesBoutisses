@@ -114,3 +114,13 @@ document.addEventListener('DOMContentLoaded', function() {
     
     console.log('Écouteur d\'événements ajouté au formulaire');
 });
+
+
+// --------- MENU BURGER ------------
+const toggle = document.querySelector('.menu-toggle');
+     const sidebar = document.querySelector('.navbar > ul');
+
+     toggle.addEventListener('click', () => {      
+         sidebar.classList.toggle('open');
+         toggle.classList.toggle('open');
+     })

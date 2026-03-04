@@ -13,8 +13,14 @@
         
         <section class="header">
             <div class="logo">
-                <h2>Gîte Les Terrasses des Boutisses</h2>
+                <h2>Gîte Terrasses des Boutisses</h2>
             </div>
+
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div> <!-- pour le menu mobile -->
 
             <nav class="navbar">
                 <ul>
@@ -40,7 +46,7 @@
             <img src="./Chambredouble/vue3.avif" alt="Entrée d'une chambre" class="imgr">
 
             <div class="bienvenue-text">
-                <h1>Gîte Les Terrasses des Boutisses</h1>
+                <h1>Gîte Terrasses des Boutisses</h1>
                 <h4>Au coeur des Monts d'Ardèche</h4>
             </div>
             
@@ -74,7 +80,6 @@
                     <img src="./Chambredouble/vue4.webp" alt="Vue sur la vallée de la cuisine">
                     <img src="./Chambredouble/cd4.avif" alt="La cuisine extérieure">
                     <img src="./Chambredouble/vue1.webp" alt="Vue sur la vallée de la fenêtre de la chambre">
-                    <!-- <img src="./Chambre double/cd5.webp" alt="Rangement cuisine"> -->
                 </div>
             </section>
         </section>
@@ -107,11 +112,11 @@
             <section class="presentation">
                 <div>
                     <h1>La chambre Mansarde</h1>
-                    <p>3 personnes - 3 lits simples - toilettes sèches extérieures</p>
+                    <p>2 personnes - 2 lits simples - toilettes sèches extérieures</p>
                 </div>
 
                 <div>
-                    <p>Nichée dans la dépendance du gîte, cette chambre est idéale pour accueillir jusqu’à 3 personnes. Elle offre trois lits doubles confortables, invitant au repos dans un cadre paisible.</p>
+                    <p>Nichée dans la dépendance du gîte, cette chambre est idéale pour accueillir 2 personnes. Elle offre deux lits simples confortables, invitant au repos dans un cadre paisible.</p>
                     <p>Vous profiterez également d’une agréable terrasse, idéale pour savourer un moment de calme en pleine nature, ainsi que d’un accès à nos belles toilettes sèches, pour une expérience authentique et respectueuse de l’environnement.</p>
                 </div>
             </section>
@@ -133,11 +138,15 @@
     <footer>
 
         <section class="adress">
-            <h1>Gîte Les Terrasses des Boutisses</h1><br>
-            <p>Vous pouvez me contacter au 06.60.22.69.81 (Sabine)</p>
-            <p>ou par mail : <a href="mailto:giteterrassesdesboutisses@gmail.com">giteterrassesdesboutisses@gmail.com</a></p><br>
-            <p>250 Chemin de La Coste<br>07160 St Jean Roure</p>
-            <p></p>
+            <div class="adress1">
+                <h1>Gîte Terrasses des Boutisses</h1>
+                <p>250 Chemin de La Coste<br>07160 St Jean Roure</p>
+            </div>
+
+            <div class="adress2">
+                <p>Vous pouvez me contacter au 06.60.22.69.81 (Sabine)</p>
+                <p>ou par mail : <a href="mailto:giteterrassesdesboutisses@gmail.com">giteterrassesdesboutisses@gmail.com</a></p>
+            </div>
         </section>
 
         <section class="reseaux">
@@ -182,13 +191,13 @@
     })
 
 
-//     const toggle = document.querySelector('.menu-toggle');
-//     const sidebar = document.querySelector('.main-nav > ul');
+     const toggle = document.querySelector('.menu-toggle');
+     const sidebar = document.querySelector('.navbar > ul');
 
-//     toggle.addEventListener('click', () => {      
-//         sidebar.classList.toggle('open');
-//         toggle.classList.toggle('open');
-//     })
+     toggle.addEventListener('click', () => {      
+         sidebar.classList.toggle('open');
+         toggle.classList.toggle('open');
+     })
 
     </script>
 

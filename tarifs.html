@@ -13,8 +13,14 @@
         
         <section class="header">
             <div class="logo">
-                <h2>Gîte Les Terrasses des Boutisses</h2>
+                <h2>Gîte Terrasses des Boutisses</h2>
             </div>
+
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div> <!-- pour le menu mobile -->
 
             <nav class="navbar">
                 <ul>
@@ -40,7 +46,7 @@
             <img src="./Jardinetvues/terrasse3.jpeg" alt="Vue magnifique de la terrasse devant le gîte" class="imgr">
 
             <div class="bienvenue-text">
-                <h1>Gîte Les Terrasses des Boutisses</h1>
+                <h1>Gîte Terrasses des Boutisses</h1>
                 <h4>Au coeur des Monts d'Ardèche</h4>
             </div>
                         
@@ -56,20 +62,7 @@
             </section>
 
             <section class="saisons">
-                <!-- <div class="basseSaison">
-                    <h2>Basse saison</h2>
-                    <p>(Hors vacances scolaires d'été et de Noël)</p>
-                    <div class="prixNuits">
-                        <p>- 2 nuits : 810 €</p>
-                        <p>- 3 nuits: 1 130 €</p>
-                        <p>- 4 nuits: 1 440 €</p>
-                        <p>- 5 nuits: 1 710 €</p>
-                        <p>- 6 nuits: 1 890 €</p>
-                        <p>- 7 nuits: 2 010 €</p>
-                    </div>
-                </div> -->
-
-                <div class="miSaison">
+                <div class="basseSaison">
                     <h2>Basse-saison</h2>
                     <!-- <p>(Mai, Juin et Septembre)</p> -->
                     <div class="prixNuits">
@@ -134,11 +127,15 @@
     <footer>
 
         <section class="adress">
-            <h1>Gîte Les Terrasses des Boutisses</h1><br>
-            <p>Vous pouvez me contacter au 06.60.22.69.81 (Sabine)</p>
-            <p>ou par mail : <a href="mailto:giteterrassesdesboutisses@gmail.com">giteterrassesdesboutisses@gmail.com</a></p><br>
-            <p>250 Chemin de La Coste<br>07160 St Jean Roure</p>
-            <p></p>
+            <div class="adress1">
+                <h1>Gîte Terrasses des Boutisses</h1>
+                <p>250 Chemin de La Coste<br>07160 St Jean Roure</p>
+            </div>
+
+            <div class="adress2">
+                <p>Vous pouvez me contacter au 06.60.22.69.81 (Sabine)</p>
+                <p>ou par mail : <a href="mailto:giteterrassesdesboutisses@gmail.com">giteterrassesdesboutisses@gmail.com</a></p><br>
+            </div>
         </section>
 
         <section class="reseaux">
@@ -183,13 +180,13 @@
     })
 
 
-//     const toggle = document.querySelector('.menu-toggle');
-//     const sidebar = document.querySelector('.main-nav > ul');
+     const toggle = document.querySelector('.menu-toggle');
+     const sidebar = document.querySelector('.navbar > ul');
 
-//     toggle.addEventListener('click', () => {      
-//         sidebar.classList.toggle('open');
-//         toggle.classList.toggle('open');
-//     })
+     toggle.addEventListener('click', () => {      
+         sidebar.classList.toggle('open');
+         toggle.classList.toggle('open');
+     })
 
     </script>
 

@@ -13,8 +13,14 @@
         
         <section class="header">
             <div class="logo">
-                <h2>Gîte Les Terrasses des Boutisses</h2>
+                <h2>Gîte Terrasses des Boutisses</h2>
             </div>
+
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div> <!-- pour le menu mobile -->
 
             <nav class="navbar">
                 <ul>
@@ -40,7 +46,7 @@
             <img src="./Activites/cyclisme.avif" alt="Balade à vélo" class="imgr">
 
             <div class="bienvenue-text">
-                <h1>Gîte Les Terrasses des Boutisses</h1>
+                <h1>Gîte Terrasses des Boutisses</h1>
                 <h4>Au coeur des Monts d'Ardèche</h4>
             </div>
         </section>
@@ -53,7 +59,7 @@
                         <h1>Randonnées</h1>
                         <p>Au départ de notre châtaigneraie de 15ha, rejoignez de multiples sentiers vous offrant des randonnées avec des points de vue sur les Monts d’Ardèche :</p>
                         <ul>
-                            <li>La Dolce Via (500m)</li>
+                            <li>La Dolce Via (2km)</li>
                             <li>Château de Rochebonne (7,5km)</li>
                             <li>Rocher de Brion (14km)</li>
                             <li>Lac de Devesset (18km)</li>
@@ -70,7 +76,7 @@
                 <figure class="cyclotourisme">
                     <figcaption>
                         <h1>Cyclotourisme</h1>
-                        <p>Nous mettons à votre disposition une dizaine de vélos avec lesquels vous pourrez rejoindre une piste cyclable à deux pats du gîte qui vous conduit vers Lamastre ou Le Cheylard en surplombant la rivière de l’Eyrieux. Des centaines de kilomètres ont été aménagés par le territoire afin de vous permettre de sillonner notre région. Jetez un coup d'œil à leur site !</p>
+                        <p>Nous mettons à votre disposition une dizaine de vélos avec lesquels vous pourrez rejoindre une piste cyclable à deux pats du gîte qui vous conduit vers Lamastre ou Le Cheylard en surplombant la rivière de l’Eyrieux. Une centaine de kilomètres ont été aménagés par le territoire afin de vous permettre de sillonner notre région. Jetez un coup d'œil à leur site !</p>
                         <p>En juin, une des plus grandes épreuves cyclotouristes d’Europe propose à des milliers de participants de sillonner notre belle région sur 200km. Retrouvez tous les parcours adaptés à chacun sur leur site internet !</p>
                         <div class="liens">
                             <a href="https://www.ardeche-guide.com/decouvrir/top-10-des-experiences-incontournables/ardeche-velo/" target="_blank" rel="noopener noreferrer">L'Ardèche à vélo</a>
@@ -82,10 +88,10 @@
 
             <section>
                 <figure class="vieArdechoise">
-                    <img src="./Activites/vie-ardechoise.avif" alt="">
+                    <img src="./Activites/vie-ardechoise.avif" alt="Marché du Cheylard">
                     <figcaption>
                         <h1>La vie ardéchoise</h1>
-                        <p>Retrouvez tous les villages de caractère comme :</p>
+                        <p>Retrouvez tous les villages de caractère de :</p>
                         <ul>
                             <li>Désaignes</li>
                             <li>Antraigues-sur-Volane</li>
@@ -146,7 +152,7 @@
                     <img src="./Activites/vue11.avif" alt="Vue sur une forêt dans la vallée">
                     <img src="./Jardinetvues/divers2.webp" alt="Poussins">
                     <img src="./Jardinetvues/divers.avif" alt="Parterre du fleurs muticolore">
-                     <img src="./Jardinetvues/exterieur1.webp" alt="La terrasse du gîte en hiver">
+                    <img src="./Jardinetvues/exterieur1.webp" alt="La terrasse du gîte en hiver">
                     <img src="./Jardinetvues/vue8.jpeg" alt="Vue sur la vallée en fin de journée">
                 </div>
             </section>
@@ -157,11 +163,15 @@
     <footer>
 
         <section class="adress">
-            <h1>Gîte Les Terrasses des Boutisses</h1><br>
-            <p>Vous pouvez me contacter au 06.60.22.69.81 (Sabine)</p>
-            <p>ou par mail : <a href="mailto:giteterrassesdesboutisses@gmail.com">giteterrassesdesboutisses@gmail.com</a></p><br>
-            <p>250 Chemin de La Coste<br>07160 St Jean Roure</p>
-            <p></p>
+            <div class="adress1">
+                <h1>Gîte Terrasses des Boutisses</h1>
+                <p>250 Chemin de La Coste<br>07160 St Jean Roure</p>
+            </div>
+
+            <div class="adress2">
+                <p>Vous pouvez me contacter au 06.60.22.69.81 (Sabine)</p>
+                <p>ou par mail : <a href="mailto:giteterrassesdesboutisses@gmail.com">giteterrassesdesboutisses@gmail.com</a></p>
+            </div>
         </section>
 
         <section class="reseaux">
@@ -206,13 +216,13 @@
     })
 
 
-//     const toggle = document.querySelector('.menu-toggle');
-//     const sidebar = document.querySelector('.main-nav > ul');
+     const toggle = document.querySelector('.menu-toggle');
+     const sidebar = document.querySelector('.navbar > ul');
 
-//     toggle.addEventListener('click', () => {      
-//         sidebar.classList.toggle('open');
-//         toggle.classList.toggle('open');
-//     })
+     toggle.addEventListener('click', () => {      
+         sidebar.classList.toggle('open');
+         toggle.classList.toggle('open');
+     })
 
     </script>
 

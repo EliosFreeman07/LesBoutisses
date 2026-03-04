@@ -16,8 +16,14 @@
         
         <section class="header">
             <div class="logo">
-                <h2>Gîte Les Terrasses des Boutisses</h2>
+                <h2>Gîte Terrasses des Boutisses</h2>
             </div>
+
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div> <!-- pour le menu mobile -->
 
             <nav class="navbar">
                 <ul>
@@ -87,11 +93,15 @@
     <footer>
 
         <section class="adress">
-            <h1>Gîte Les Terrasses des Boutisses</h1><br>
-            <p>Vous pouvez me contacter au 06.60.22.69.81 (Sabine)</p>
-            <p>ou par mail : <a href="mailto:giteterrassesdesboutisses@gmail.com">giteterrassesdesboutisses@gmail.com</a></p><br>
-            <p>250 Chemin de La Coste<br>07160 St Jean Roure</p>
-            <p></p>
+            <div class="adress1">
+                <h1>Gîte Terrasses des Boutisses</h1>
+                <p>250 Chemin de La Coste<br>07160 St Jean Roure</p>
+            </div>
+
+            <div class="adress2">
+                <p>Vous pouvez me contacter au 06.60.22.69.81 (Sabine)</p>
+                <p>ou par mail : <a href="mailto:giteterrassesdesboutisses@gmail.com">giteterrassesdesboutisses@gmail.com</a></p><br>
+            </div>
         </section>
 
         <section class="reseaux">
@@ -115,36 +125,7 @@
     
 <!-- Scroll event -->
 
-    <script src="contact.js">
-
-    //  const imgr = document.querySelector(".imgr");
-    //  const nav = document.querySelector(".header");
-    //  let lastScroll = 0;
-
-    //  window.addEventListener("scroll", () => {
-    //  const scroll = window.scrollY;
-    //  imgr.style.transform = `translateY(${scroll * 0.6}px)`;
-    //  })
-
-    //  window.addEventListener('scroll', () => {
-    //      if (window.scrollY > lastScroll) {
-    //          nav.style.top = "-6rem"
-    //      } else {
-    //          nav.style.top = "0"
-    //      }
-    //      lastScroll = window.scrollY;
-    //  })
-
-
-//     const toggle = document.querySelector('.menu-toggle');
-//     const sidebar = document.querySelector('.main-nav > ul');
-
-//     toggle.addEventListener('click', () => {      
-//         sidebar.classList.toggle('open');
-//         toggle.classList.toggle('open');
-//     })
-
-    </script>
+    <script src="contact.js"></script>
 
 </body>
 </html>
